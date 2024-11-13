@@ -35,69 +35,44 @@ namespace Sistema_Nomina_Web.Models.dbModels
                     .HasName("PK__Incidenc__E41133E6CD3D6597");
 
                 entity.Property(e => e.Faltas).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.HorasExtra).HasDefaultValueSql("((0))");
 
                 entity.HasOne(d => d.PeriodoNomina)
                     .WithMany(p => p.Incidencia)
                     .HasForeignKey(d => d.PeriodoNominaId)
+                    .OnDelete(DeleteBehavior.Cascade) // Agregar Cascade
                     .HasConstraintName("FK__Incidenci__Perio__571DF1D5");
 
                 entity.HasOne(d => d.Trabajador)
                     .WithMany(p => p.Incidencia)
                     .HasForeignKey(d => d.TrabajadorId)
+                    .OnDelete(DeleteBehavior.Cascade) // Agregar Cascade
                     .HasConstraintName("FK__Incidenci__Traba__5629CD9C");
             });
 
             modelBuilder.Entity<Nomina>(entity =>
             {
                 entity.Property(e => e.DescuentoFaltas).HasDefaultValueSql("((0))");
-
-                entity.Property(e => e.Faltas).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.FechaCalculo).HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.HorasExtra).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.ImporteHorasExtra).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.Imss).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.Isr).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.OtrasDeducciones).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.SalarioNeto).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.TotalDeducciones).HasDefaultValueSql("((0))");
-
                 entity.Property(e => e.TotalPercepciones).HasDefaultValueSql("((0))");
 
                 entity.HasOne(d => d.PeriodoNomina)
                     .WithMany(p => p.Nominas)
                     .HasForeignKey(d => d.PeriodoNominaId)
+                    .OnDelete(DeleteBehavior.Cascade) // Agregar Cascade
                     .HasConstraintName("FK__Nomina__PeriodoN__5CD6CB2B");
 
                 entity.HasOne(d => d.Trabajador)
                     .WithMany(p => p.Nominas)
                     .HasForeignKey(d => d.TrabajadorId)
+                    .OnDelete(DeleteBehavior.Cascade) // Agregar Cascade
                     .HasConstraintName("FK__Nomina__Trabajad__5BE2A6F2");
-            });
-
-            modelBuilder.Entity<PeriodoNomina>(entity =>
-            {
-                entity.Property(e => e.Estado).HasDefaultValueSql("('Abierto')");
-
-                entity.HasOne(d => d.TipoSalario)
-                    .WithMany(p => p.PeriodoNominas)
-                    .HasForeignKey(d => d.TipoSalarioId)
-                    .HasConstraintName("FK__PeriodoNo__TipoS__52593CB8");
-            });
-
-            modelBuilder.Entity<TipoJornadum>(entity =>
-            {
-                entity.HasKey(e => e.TipoJornadaId)
-                    .HasName("PK__TipoJorn__D5BB589C60E848B1");
             });
 
             modelBuilder.Entity<Trabajador>(entity =>
@@ -107,19 +82,22 @@ namespace Sistema_Nomina_Web.Models.dbModels
                 entity.HasOne(d => d.TipoJornada)
                     .WithMany(p => p.Trabajadors)
                     .HasForeignKey(d => d.TipoJornadaId)
+                    .OnDelete(DeleteBehavior.Restrict) // Opcional, depende de tu lógica
                     .HasConstraintName("FK__Trabajado__TipoJ__4D94879B");
 
                 entity.HasOne(d => d.TipoSalario)
                     .WithMany(p => p.Trabajadors)
                     .HasForeignKey(d => d.TipoSalarioId)
+                    .OnDelete(DeleteBehavior.Restrict) // Opcional, depende de tu lógica
                     .HasConstraintName("FK__Trabajado__TipoS__4E88ABD4");
 
                 entity.HasOne(d => d.Periodicidad)
-        .WithMany()
-        .HasForeignKey(d => d.PeriodicidadId)
-        .HasConstraintName("FK_Trabajador_Periodicidad");
-
+                    .WithMany()
+                    .HasForeignKey(d => d.PeriodicidadId)
+                    .OnDelete(DeleteBehavior.Restrict) // Opcional, depende de tu lógica
+                    .HasConstraintName("FK_Trabajador_Periodicidad");
             });
+
 
             OnModelCreatingPartial(modelBuilder);
         }

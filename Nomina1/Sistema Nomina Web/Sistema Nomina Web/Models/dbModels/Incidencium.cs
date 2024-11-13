@@ -24,5 +24,8 @@ namespace Sistema_Nomina_Web.Models.dbModels
         [ForeignKey("TrabajadorId")]
         [InverseProperty("Incidencia")]
         public virtual Trabajador? Trabajador { get; set; }
+
+        // Nueva propiedad de navegación
+        public virtual ICollection<Nomina> Nominas { get; set; } = new List<Nomina>();
     }
 }

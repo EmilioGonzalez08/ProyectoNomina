@@ -17,20 +17,28 @@ namespace Sistema_Nomina_Web.Models.dbModels
 
         [Key]
         public int PeriodoNominaId { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime FechaInicio { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime FechaFin { get; set; }
-        public int? TipoSalarioId { get; set; }
+
+        // Nueva relación con la tabla Periodicidad
+        public int? PeriodicidadId { get; set; }
+
         [StringLength(20)]
         [Unicode(false)]
         public string? Estado { get; set; }
 
-        [ForeignKey("TipoSalarioId")]
+        // Relación con Periodicidad
+        [ForeignKey("PeriodicidadId")]
         [InverseProperty("PeriodoNominas")]
-        public virtual TipoSalario? TipoSalario { get; set; }
+        public virtual Periodicidad? Periodicidad { get; set; }
+
         [InverseProperty("PeriodoNomina")]
         public virtual ICollection<Incidencium> Incidencia { get; set; }
+
         [InverseProperty("PeriodoNomina")]
         public virtual ICollection<Nomina> Nominas { get; set; }
     }

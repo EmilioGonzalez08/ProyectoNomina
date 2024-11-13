@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_Nomina_Web.Models.dbModels;
 
@@ -11,9 +12,10 @@ using Sistema_Nomina_Web.Models.dbModels;
 namespace Sistema_Nomina_Web.Migrations
 {
     [DbContext(typeof(DB_NominaContext))]
-    partial class DB_NominaContextModelSnapshot : ModelSnapshot
+    [Migration("20241109004449_FaltasRemove")]
+    partial class FaltasRemove
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

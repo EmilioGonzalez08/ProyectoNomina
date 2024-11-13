@@ -1,0 +1,63 @@
+﻿@model Sistema_Nomina_Web.Models.dbModels.Incidencium
+
+@{
+    ViewData["Title"] = "Create Incidencia";
+}
+
+<h1>Create Incidencia</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Trabajador -->
+            <div class="form-group">
+                <label asp-for="TrabajadorId" class="control-label"></label>
+                <select asp-for="TrabajadorId" class="form-control" asp-items="ViewBag.TrabajadorId"></select>
+                <span asp-validation-for="TrabajadorId" class="text-danger"></span>
+            </div>
+
+            <!-- Periodo de Nómina -->
+            <div class="form-group">
+                <label asp-for="PeriodoNominaId" class="control-label"></label>
+                <select asp-for="PeriodoNominaId" class="form-control" asp-items="ViewBag.PeriodoNominaId"></select>
+                <span asp-validation-for="PeriodoNominaId" class="text-danger"></span>
+            </div>
+
+            <!-- Fecha -->
+            <div class="form-group">
+                <label asp-for="Fecha" class="control-label"></label>
+                <input asp-for="Fecha" class="form-control" type="date" />
+                <span asp-validation-for="Fecha" class="text-danger"></span>
+            </div>
+
+            <!-- Faltas -->
+            <div class="form-group">
+                <label asp-for="Faltas" class="control-label"></label>
+                <input asp-for="Faltas" class="form-control" type="number" min="0" />
+                <span asp-validation-for="Faltas" class="text-danger"></span>
+            </div>
+
+            <!-- Horas Extra -->
+            <div class="form-group">
+                <label asp-for="HorasExtra" class="control-label"></label>
+                <input asp-for="HorasExtra" class="form-control" type="number" min="0" />
+                <span asp-validation-for="HorasExtra" class="text-danger"></span>
+            </div>
+
+            <!-- Botón para crear -->
+            <div class="form-group mt-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

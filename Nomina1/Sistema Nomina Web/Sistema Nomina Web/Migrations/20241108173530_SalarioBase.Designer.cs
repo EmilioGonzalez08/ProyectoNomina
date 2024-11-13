@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_Nomina_Web.Models.dbModels;
 
@@ -11,9 +12,10 @@ using Sistema_Nomina_Web.Models.dbModels;
 namespace Sistema_Nomina_Web.Migrations
 {
     [DbContext(typeof(DB_NominaContext))]
-    partial class DB_NominaContextModelSnapshot : ModelSnapshot
+    [Migration("20241108173530_SalarioBase")]
+    partial class SalarioBase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -293,10 +295,20 @@ namespace Sistema_Nomina_Web.Migrations
                         .HasColumnType("decimal(10,2)")
                         .HasDefaultValueSql("((0))");
 
+                    b.Property<int?>("Faltas")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("((0))");
+
                     b.Property<DateTime?>("FechaCalculo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
                         .HasDefaultValueSql("(getdate())");
+
+                    b.Property<decimal?>("HorasExtra")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(5,2)")
+                        .HasDefaultValueSql("((0))");
 
                     b.Property<decimal?>("ImporteHorasExtra")
                         .ValueGeneratedOnAdd()
@@ -308,9 +320,6 @@ namespace Sistema_Nomina_Web.Migrations
                         .HasColumnType("decimal(10,2)")
                         .HasColumnName("IMSS")
                         .HasDefaultValueSql("((0))");
-
-                    b.Property<int?>("IncidenciaId")
-                        .HasColumnType("int");
 
                     b.Property<decimal?>("Isr")
                         .ValueGeneratedOnAdd()
@@ -346,8 +355,6 @@ namespace Sistema_Nomina_Web.Migrations
 
                     b.HasKey("NominaId");
 
-                    b.HasIndex("IncidenciaId");
-
                     b.HasIndex("PeriodoNominaId");
 
                     b.HasIndex("TrabajadorId");
@@ -364,9 +371,11 @@ namespace Sistema_Nomina_Web.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PeriodoNominaId"), 1L, 1);
 
                     b.Property<string>("Estado")
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(20)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(20)");
+                        .HasColumnType("varchar(20)")
+                        .HasDefaultValueSql("('Abierto')");
 
                     b.Property<DateTime>("FechaFin")
                         .HasColumnType("date");
@@ -374,12 +383,12 @@ namespace Sistema_Nomina_Web.Migrations
                     b.Property<DateTime>("FechaInicio")
                         .HasColumnType("date");
 
-                    b.Property<int?>("PeriodicidadId")
+                    b.Property<int?>("TipoSalarioId")
                         .HasColumnType("int");
 
                     b.HasKey("PeriodoNominaId");
 
-                    b.HasIndex("PeriodicidadId");
+                    b.HasIndex("TipoSalarioId");
 
                     b.ToTable("PeriodoNomina");
                 });
@@ -401,7 +410,8 @@ namespace Sistema_Nomina_Web.Migrations
                     b.Property<decimal>("HorasJornada")
                         .HasColumnType("decimal(5,2)");
 
-                    b.HasKey("TipoJornadaId");
+                    b.HasKey("TipoJornadaId")
+                        .HasName("PK__TipoJorn__D5BB589C60E848B1");
 
                     b.ToTable("TipoJornada");
                 });
@@ -553,13 +563,11 @@ namespace Sistema_Nomina_Web.Migrations
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.PeriodoNomina", "PeriodoNomina")
                         .WithMany("Incidencia")
                         .HasForeignKey("PeriodoNominaId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__Incidenci__Perio__571DF1D5");
 
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.Trabajador", "Trabajador")
                         .WithMany("Incidencia")
                         .HasForeignKey("TrabajadorId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__Incidenci__Traba__5629CD9C");
 
                     b.Navigation("PeriodoNomina");
@@ -569,23 +577,15 @@ namespace Sistema_Nomina_Web.Migrations
 
             modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.Nomina", b =>
                 {
-                    b.HasOne("Sistema_Nomina_Web.Models.dbModels.Incidencium", "Incidencia")
-                        .WithMany("Nominas")
-                        .HasForeignKey("IncidenciaId");
-
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.PeriodoNomina", "PeriodoNomina")
                         .WithMany("Nominas")
                         .HasForeignKey("PeriodoNominaId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__Nomina__PeriodoN__5CD6CB2B");
 
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.Trabajador", "Trabajador")
                         .WithMany("Nominas")
                         .HasForeignKey("TrabajadorId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__Nomina__Trabajad__5BE2A6F2");
-
-                    b.Navigation("Incidencia");
 
                     b.Navigation("PeriodoNomina");
 
@@ -594,11 +594,12 @@ namespace Sistema_Nomina_Web.Migrations
 
             modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.PeriodoNomina", b =>
                 {
-                    b.HasOne("Periodicidad", "Periodicidad")
+                    b.HasOne("Sistema_Nomina_Web.Models.dbModels.TipoSalario", "TipoSalario")
                         .WithMany("PeriodoNominas")
-                        .HasForeignKey("PeriodicidadId");
+                        .HasForeignKey("TipoSalarioId")
+                        .HasConstraintName("FK__PeriodoNo__TipoS__52593CB8");
 
-                    b.Navigation("Periodicidad");
+                    b.Navigation("TipoSalario");
                 });
 
             modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.Trabajador", b =>
@@ -606,19 +607,16 @@ namespace Sistema_Nomina_Web.Migrations
                     b.HasOne("Periodicidad", "Periodicidad")
                         .WithMany()
                         .HasForeignKey("PeriodicidadId")
-                        .OnDelete(DeleteBehavior.Restrict)
                         .HasConstraintName("FK_Trabajador_Periodicidad");
 
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.TipoJornadum", "TipoJornada")
                         .WithMany("Trabajadors")
                         .HasForeignKey("TipoJornadaId")
-                        .OnDelete(DeleteBehavior.Restrict)
                         .HasConstraintName("FK__Trabajado__TipoJ__4D94879B");
 
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.TipoSalario", "TipoSalario")
                         .WithMany("Trabajadors")
                         .HasForeignKey("TipoSalarioId")
-                        .OnDelete(DeleteBehavior.Restrict)
                         .HasConstraintName("FK__Trabajado__TipoS__4E88ABD4");
 
                     b.Navigation("Periodicidad");
@@ -626,16 +624,6 @@ namespace Sistema_Nomina_Web.Migrations
                     b.Navigation("TipoJornada");
 
                     b.Navigation("TipoSalario");
-                });
-
-            modelBuilder.Entity("Periodicidad", b =>
-                {
-                    b.Navigation("PeriodoNominas");
-                });
-
-            modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.Incidencium", b =>
-                {
-                    b.Navigation("Nominas");
                 });
 
             modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.PeriodoNomina", b =>
@@ -652,6 +640,8 @@ namespace Sistema_Nomina_Web.Migrations
 
             modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.TipoSalario", b =>
                 {
+                    b.Navigation("PeriodoNominas");
+
                     b.Navigation("Trabajadors");
                 });
 

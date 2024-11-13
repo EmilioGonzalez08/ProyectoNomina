@@ -191,6 +191,50 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Incidencias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jaWRlbmNpYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Incidencias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jaWRlbmNpYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Incidencias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jaWRlbmNpYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Incidencias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jaWRlbmNpYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Incidencias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5jaWRlbmNpYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Nomina/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9taW5hXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Nomina/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9taW5hXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Nomina/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9taW5hXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Nomina/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9taW5hXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Nomina/Generar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9taW5hXEdlbmVyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Nomina/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9taW5hXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Periodicidad/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kaWNpZGFkXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -209,6 +253,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Periodicidad/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kaWNpZGFkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/PeriodoNomina/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kb05vbWluYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/PeriodoNomina/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kb05vbWluYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/PeriodoNomina/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kb05vbWluYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/PeriodoNomina/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kb05vbWluYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/PeriodoNomina/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyaW9kb05vbWluYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PC/Desktop/Proyecto integrador 2B/Nomina1/Sistema Nomina Web/Sistema Nomina Web/Views/Shared/Error.cshtml]

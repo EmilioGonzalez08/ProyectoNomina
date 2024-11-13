@@ -11,7 +11,6 @@ namespace Sistema_Nomina_Web.Models.dbModels
     {
         public TipoSalario()
         {
-            PeriodoNominas = new HashSet<PeriodoNomina>();
             Trabajadors = new HashSet<Trabajador>();
         }
 
@@ -24,8 +23,6 @@ namespace Sistema_Nomina_Web.Models.dbModels
         [Unicode(false)]
         public string Periodicidad { get; set; } = null!;
 
-        [InverseProperty("TipoSalario")]
-        public virtual ICollection<PeriodoNomina> PeriodoNominas { get; set; }
         [InverseProperty("TipoSalario")]
         public virtual ICollection<Trabajador> Trabajadors { get; set; }
     }

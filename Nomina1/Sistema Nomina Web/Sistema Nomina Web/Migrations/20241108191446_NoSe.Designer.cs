@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_Nomina_Web.Models.dbModels;
 
@@ -11,9 +12,10 @@ using Sistema_Nomina_Web.Models.dbModels;
 namespace Sistema_Nomina_Web.Migrations
 {
     [DbContext(typeof(DB_NominaContext))]
-    partial class DB_NominaContextModelSnapshot : ModelSnapshot
+    [Migration("20241108191446_NoSe")]
+    partial class NoSe
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -293,10 +295,20 @@ namespace Sistema_Nomina_Web.Migrations
                         .HasColumnType("decimal(10,2)")
                         .HasDefaultValueSql("((0))");
 
+                    b.Property<int?>("Faltas")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("((0))");
+
                     b.Property<DateTime?>("FechaCalculo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
                         .HasDefaultValueSql("(getdate())");
+
+                    b.Property<decimal?>("HorasExtra")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(5,2)")
+                        .HasDefaultValueSql("((0))");
 
                     b.Property<decimal?>("ImporteHorasExtra")
                         .ValueGeneratedOnAdd()
@@ -309,7 +321,7 @@ namespace Sistema_Nomina_Web.Migrations
                         .HasColumnName("IMSS")
                         .HasDefaultValueSql("((0))");
 
-                    b.Property<int?>("IncidenciaId")
+                    b.Property<int?>("IncidenciumIncidenciaId")
                         .HasColumnType("int");
 
                     b.Property<decimal?>("Isr")
@@ -346,7 +358,7 @@ namespace Sistema_Nomina_Web.Migrations
 
                     b.HasKey("NominaId");
 
-                    b.HasIndex("IncidenciaId");
+                    b.HasIndex("IncidenciumIncidenciaId");
 
                     b.HasIndex("PeriodoNominaId");
 
@@ -569,9 +581,9 @@ namespace Sistema_Nomina_Web.Migrations
 
             modelBuilder.Entity("Sistema_Nomina_Web.Models.dbModels.Nomina", b =>
                 {
-                    b.HasOne("Sistema_Nomina_Web.Models.dbModels.Incidencium", "Incidencia")
+                    b.HasOne("Sistema_Nomina_Web.Models.dbModels.Incidencium", null)
                         .WithMany("Nominas")
-                        .HasForeignKey("IncidenciaId");
+                        .HasForeignKey("IncidenciumIncidenciaId");
 
                     b.HasOne("Sistema_Nomina_Web.Models.dbModels.PeriodoNomina", "PeriodoNomina")
                         .WithMany("Nominas")
@@ -584,8 +596,6 @@ namespace Sistema_Nomina_Web.Migrations
                         .HasForeignKey("TrabajadorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .HasConstraintName("FK__Nomina__Trabajad__5BE2A6F2");
-
-                    b.Navigation("Incidencia");
 
                     b.Navigation("PeriodoNomina");
 

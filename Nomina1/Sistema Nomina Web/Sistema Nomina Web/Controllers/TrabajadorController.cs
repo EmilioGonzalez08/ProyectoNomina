@@ -69,9 +69,9 @@ namespace Sistema_Nomina_Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "PeriodicidadId", trabajador.PeriodicidadId);
-            ViewData["TipoJornadaId"] = new SelectList(_context.TipoJornada, "TipoJornadaId", "TipoJornadaId", trabajador.TipoJornadaId);
-            ViewData["TipoSalarioId"] = new SelectList(_context.TipoSalarios, "TipoSalarioId", "TipoSalarioId", trabajador.TipoSalarioId);
+            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "Nombre", trabajador.PeriodicidadId);
+            ViewData["TipoJornadaId"] = new SelectList(_context.TipoJornada, "TipoJornadaId", "Descripcion", trabajador.TipoJornadaId);
+            ViewData["TipoSalarioId"] = new SelectList(_context.TipoSalarios, "TipoSalarioId", "Descripcion", trabajador.TipoSalarioId);
             return View(trabajador);
         }
 
@@ -88,9 +88,9 @@ namespace Sistema_Nomina_Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "PeriodicidadId", trabajador.PeriodicidadId);
-            ViewData["TipoJornadaId"] = new SelectList(_context.TipoJornada, "TipoJornadaId", "TipoJornadaId", trabajador.TipoJornadaId);
-            ViewData["TipoSalarioId"] = new SelectList(_context.TipoSalarios, "TipoSalarioId", "TipoSalarioId", trabajador.TipoSalarioId);
+            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "Nombre", trabajador.PeriodicidadId);
+            ViewData["TipoJornadaId"] = new SelectList(_context.TipoJornada, "TipoJornadaId", "Descripcion", trabajador.TipoJornadaId);
+            ViewData["TipoSalarioId"] = new SelectList(_context.TipoSalarios, "TipoSalarioId", "Descripcion", trabajador.TipoSalarioId);
             return View(trabajador);
         }
 
@@ -126,9 +126,9 @@ namespace Sistema_Nomina_Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "PeriodicidadId", trabajador.PeriodicidadId);
-            ViewData["TipoJornadaId"] = new SelectList(_context.TipoJornada, "TipoJornadaId", "TipoJornadaId", trabajador.TipoJornadaId);
-            ViewData["TipoSalarioId"] = new SelectList(_context.TipoSalarios, "TipoSalarioId", "TipoSalarioId", trabajador.TipoSalarioId);
+            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "Nombre", trabajador.PeriodicidadId);
+            ViewData["TipoJornadaId"] = new SelectList(_context.TipoJornada, "TipoJornadaId", "Descripcion", trabajador.TipoJornadaId);
+            ViewData["TipoSalarioId"] = new SelectList(_context.TipoSalarios, "TipoSalarioId", "Descripcion", trabajador.TipoSalarioId);
             return View(trabajador);
         }
 
