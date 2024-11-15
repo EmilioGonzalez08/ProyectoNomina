@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Sistema_Nomina_Web.Models.dbModels.Trabajador>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+
+<!-- jQuery (necesario para DataTables) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+<h1>Lista de empleados</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Crear Nuevo Empleado</a>
+</p>
+
+<div style="overflow-x:auto;">
+    <table id="empleadosTable" class="display table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model.Rfc)</th>
+                <th>@Html.DisplayNameFor(model => model.Curp)</th>
+                <th>@Html.DisplayNameFor(model => model.Nss)</th>
+                <th>@Html.DisplayNameFor(model => model.FechaInicio)</th>
+                <th>@Html.DisplayNameFor(model => model.SalarioBase)</th>
+                <th>@Html.DisplayNameFor(model => model.Periodicidad.Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model.Activo)</th>
+                <th>@Html.DisplayNameFor(model => model.TipoJornada.Descripcion)</th>
+                <th>@Html.DisplayNameFor(model => model.TipoSalario.Descripcion)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Rfc)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Curp)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Nss)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaInicio)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SalarioBase)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Periodicidad.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Activo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TipoJornada.Descripcion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TipoSalario.Descripcion)</td>
+                    <td>
+                        <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.TrabajadorId">Editar</a>
+                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.TrabajadorId">Detalles</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.TrabajadorId">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Inicializar DataTables con scroll horizontal -->
+<script>
+    $(document).ready(function () {
+        $('#empleadosTable').DataTable({
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.13.5/i18n/Spanish.json"
+            },
+            "pageLength": 10,
+            "lengthMenu": [5, 10, 25, 50],
+            "order": [[0, 'asc']],
+            "scrollX": true, // Habilita el scroll horizontal
+            "columnDefs": [
+                { "orderable": false, "targets": -1 } // Desactiva la ordenación en la columna de acciones
+            ]
+        });
+    });
+</script>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Sistema_Nomina_Web.Models.dbModels.Incidencium>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Faltas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorasExtra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeriodoNomina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Trabajador)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Faltas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorasExtra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeriodoNomina.PeriodoNominaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Trabajador.TrabajadorId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IncidenciaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IncidenciaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IncidenciaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

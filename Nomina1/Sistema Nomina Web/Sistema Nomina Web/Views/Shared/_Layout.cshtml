@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Nómina Web</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: var(--primary-color) !important;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+            .nav-link:hover {
+                background-color: var(--secondary-color);
+                color: white !important;
+            }
+
+        .navbar-toggler {
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .main-content {
+            padding: 2rem 0;
+            min-height: calc(100vh - 160px);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white !important;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+            .footer a {
+                color: rgba(255,255,255,0.8);
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    color: white;
+                }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+        }
+
+            .btn-primary:hover {
+                background-color: #2980b9;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <i class="fas fa-file-invoice-dollar me-2"></i>
+                    Sistema de Nómina
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/"><i class="fas fa-home me-1"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Trabajador"><i class="fas fa-users me-1"></i> Empleados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Nomina/Index"><i class="fas fa-envelope me-1"></i> Nomina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Contactanos"><i class="fas fa-envelope me-1"></i> Contacto</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <span>&copy; @DateTime.Now.Year - Sistema de Nómina Web - </span>
+            <a href="/Home/Privacy">Política de Privacidad</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

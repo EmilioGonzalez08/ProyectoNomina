@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Sistema_Nomina_Web.Models.dbModels.Nomina>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Incluir DataTables CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+
+<!-- jQuery (necesario para DataTables) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+<h1>Nómina</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Crear Nueva Nómina</a>
+</p>
+
+<div style="overflow-x:auto;">
+    <table id="nominaTable" class="display table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.SalarioBase)</th>
+                <th>@Html.DisplayNameFor(model => model.HorasExtra)</th>
+                <th>@Html.DisplayNameFor(model => model.ImporteHorasExtra)</th>
+                <th>@Html.DisplayNameFor(model => model.Faltas)</th>
+                <th>@Html.DisplayNameFor(model => model.DescuentoFaltas)</th>
+                <th>@Html.DisplayNameFor(model => model.Isr)</th>
+                <th>@Html.DisplayNameFor(model => model.Imss)</th>
+                <th>@Html.DisplayNameFor(model => model.OtrasDeducciones)</th>
+                <th>@Html.DisplayNameFor(model => model.TotalPercepciones)</th>
+                <th>@Html.DisplayNameFor(model => model.TotalDeducciones)</th>
+                <th>@Html.DisplayNameFor(model => model.SalarioNeto)</th>
+                <th>@Html.DisplayNameFor(model => model.FechaCalculo)</th>
+                <th>@Html.DisplayNameFor(model => model.PeriodoNomina.PeriodoNominaId)</th>
+                <th>@Html.DisplayNameFor(model => model.Trabajador.Nombre)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.SalarioBase)</td>
+                    <td>@Html.DisplayFor(modelItem => item.HorasExtra)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ImporteHorasExtra)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Faltas)</td>
+                    <td>@Html.DisplayFor(modelItem => item.DescuentoFaltas)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Isr)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Imss)</td>
+                    <td>@Html.DisplayFor(modelItem => item.OtrasDeducciones)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TotalPercepciones)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TotalDeducciones)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SalarioNeto)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaCalculo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PeriodoNomina.PeriodoNominaId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Trabajador.Nombre)</td>
+                    <td>
+                        <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.NominaId">Editar</a>
+                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.NominaId">Detalles</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.NominaId">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Inicializar DataTables con scroll horizontal -->
+<script>
+    $(document).ready(function () {
+        $('#nominaTable').DataTable({
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/1.13.5/i18n/Spanish.json"
+            },
+            "pageLength": 10,
+            "lengthMenu": [5, 10, 25, 50],
+            "order": [[0, 'desc']],
+            "scrollX": true, // Habilita el scroll horizontal
+            "columnDefs": [
+                { "orderable": false, "targets": -1 } // Desactiva la ordenación en la columna de acciones
+            ]
+        });
+    });
+</script>
