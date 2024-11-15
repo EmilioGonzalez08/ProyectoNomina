@@ -54,5 +54,27 @@ namespace Sistema_Nomina_Web.Models.dbModels
         [NotMapped]
         public int? Faltas => Incidencia?.Faltas ?? 0;
 
+        [NotMapped] // Esto indica que no se mapea a la base de datos
+        public decimal SalarioSegunPeriodicidad
+        {
+            get
+            {
+                if (Trabajador?.Periodicidad == null) return 0;
+
+                decimal factor = Trabajador.Periodicidad.PeriodicidadId switch
+                {
+                    1 => 1m / 30m,        // Diario
+                    2 => 7m / 30m,        // Semanal
+                    3 => 14m / 30m,       // Catorcenal
+                    4 => 15m / 30m,       // Quincenal
+                    5 => 1m,              // Mensual
+                    _ => 1m               // Por defecto mensual
+                };
+
+                return Trabajador.SalarioBase * factor;
+            }
+        }
+
     }
+
 }

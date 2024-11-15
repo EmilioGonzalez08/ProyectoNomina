@@ -24,6 +24,9 @@
         <thead>
             <tr>
                 <th>@Html.DisplayNameFor(model => model.SalarioBase)</th>
+                <th>
+                    Salario Nominal
+                </th>
                 <th>@Html.DisplayNameFor(model => model.HorasExtra)</th>
                 <th>@Html.DisplayNameFor(model => model.ImporteHorasExtra)</th>
                 <th>@Html.DisplayNameFor(model => model.Faltas)</th>
@@ -45,6 +48,9 @@
             {
                 <tr>
                     <td>@Html.DisplayFor(modelItem => item.SalarioBase)</td>
+                    <td>
+                        @item.SalarioSegunPeriodicidad.ToString("C")
+                    </td>
                     <td>@Html.DisplayFor(modelItem => item.HorasExtra)</td>
                     <td>@Html.DisplayFor(modelItem => item.ImporteHorasExtra)</td>
                     <td>@Html.DisplayFor(modelItem => item.Faltas)</td>
@@ -58,10 +64,13 @@
                     <td>@Html.DisplayFor(modelItem => item.FechaCalculo)</td>
                     <td>@Html.DisplayFor(modelItem => item.PeriodoNomina.PeriodoNominaId)</td>
                     <td>@Html.DisplayFor(modelItem => item.Trabajador.Nombre)</td>
-                    <td>
+                    <td> <div class="action-buttons">
                         <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.NominaId">Editar</a>
                         <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.NominaId">Detalles</a>
                         <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.NominaId">Eliminar</a>
+                        <a class="btn btn-outline-primary" asp-action="GenerarPDF" asp-route-id="@item.NominaId" >PDF</a>
+                        </div>
+
                     </td>
                 </tr>
             }
