@@ -14,9 +14,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Sistema_Nomina_Web.Models.dbModels;
 using iText.Kernel.Pdf.Canvas.Draw;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Sistema_Nomina_Web.Controllers
 {
+    [Authorize]
     public class NominaController : Controller
     {
         private readonly DB_NominaContext _context;
