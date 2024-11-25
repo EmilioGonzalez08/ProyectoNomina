@@ -1,0 +1,732 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\home\\contactanos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\home\\contactanos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\empleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\empleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\periodonominacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\periodonominacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\tipojornadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\tipojornadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\trabajador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\trabajador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\trabajadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\trabajadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\tiposalariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\tiposalariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\periodicidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\periodicidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\nominacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\nominacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\incidenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\incidenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\trabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\nomina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\nomina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\periodonomina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\periodonomina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\incidencium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\incidencium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\periodicidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\periodicidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\tiposalario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\tiposalario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\models\\dbmodels\\db_nominacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\models\\dbmodels\\db_nominacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\incidencias\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\incidencias\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\periodonomina\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\periodonomina\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\periodonomina\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\periodonomina\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\periodonomina\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\periodonomina\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\periodonomina\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\periodonomina\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\periodonomina\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\periodonomina\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\generar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\generar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\tipojornada\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\tipojornada\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Desktop\\Proyecto integrador 2B\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106023030_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\migrations\\20241106041749_addperiodicidadtotrabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\migrations\\20241106041749_addperiodicidadtotrabajador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\migrations\\20241106024523_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\migrations\\20241106024523_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\migrations\\20241108191446_nose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\migrations\\20241108191446_nose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\migrations\\20241109004449_faltasremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\migrations\\20241109004449_faltasremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\migrations\\20241108180036_periodicidadperiodonominal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\migrations\\20241108180036_periodicidadperiodonominal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\usuario\\desktop\\pi 2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\migrations\\20241108173530_salariobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\migrations\\20241108173530_salariobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T03:32:14.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\appsettings.json",
+              "RelativeToolTip": "Sistema Nomina Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-24T01:21:39.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Create.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Create.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contactanos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Home\\Contactanos.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Home\\Contactanos.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Home\\Contactanos.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Home\\Contactanos.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoJornadaController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\TipoJornadaController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\TipoJornadaController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\TipoJornadaController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\TipoJornadaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Empleado\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Empleado\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Empleado\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Empleado\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PeriodoNominaController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\PeriodoNominaController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\PeriodoNominaController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\PeriodoNominaController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\PeriodoNominaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PeriodicidadController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\PeriodicidadController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\PeriodicidadController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\PeriodicidadController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\PeriodicidadController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NominaController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\NominaController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\NominaController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\NominaController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\NominaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TipoSalarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\TipoSalarioController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\TipoSalarioController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\TipoSalarioController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\TipoSalarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrabajadorController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\TrabajadorController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\TrabajadorController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\TrabajadorController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\TrabajadorController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Sistema Nomina Web\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-24T01:21:39.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IncidenciasController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\IncidenciasController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\IncidenciasController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\IncidenciasController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\IncidenciasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Program.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Program.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Program.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAUwEsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Trabajador\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Trabajador\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Trabajador\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Trabajador\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAADwv3YAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Periodicidad.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Periodicidad.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\Periodicidad.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Periodicidad.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\Periodicidad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Trabajador.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Trabajador.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\Trabajador.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Trabajador.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\Trabajador.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAA8wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TipoSalario.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\TipoSalario.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\TipoSalario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\TipoSalario.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\TipoSalario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PeriodoNomina.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\PeriodoNomina.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\PeriodoNomina.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\PeriodoNomina.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\PeriodoNomina.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwEcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAswBMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Nomina.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Nomina.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\Nomina.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Nomina.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\Nomina.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Incidencium.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Incidencium.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\Incidencium.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\Incidencium.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\Incidencium.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20241108191446_NoSe.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241108191446_NoSe.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Migrations\\20241108191446_NoSe.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241108191446_NoSe.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Migrations\\20241108191446_NoSe.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20241109004449_FaltasRemove.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241109004449_FaltasRemove.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Migrations\\20241109004449_FaltasRemove.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241109004449_FaltasRemove.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Migrations\\20241109004449_FaltasRemove.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DB_NominaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\DB_NominaContext.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Models\\dbModels\\DB_NominaContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Models\\dbModels\\DB_NominaContext.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Models\\dbModels\\DB_NominaContext.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAkwDcAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Details.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\PeriodoNomina\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Details.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\PeriodoNomina\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20241108180036_periodicidadPeriodoNominal.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241108180036_periodicidadPeriodoNominal.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Migrations\\20241108180036_periodicidadPeriodoNominal.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241108180036_periodicidadPeriodoNominal.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Migrations\\20241108180036_periodicidadPeriodoNominal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\PeriodoNomina\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Delete.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\PeriodoNomina\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Create.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\PeriodoNomina\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Create.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\PeriodoNomina\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\PeriodoNomina\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Edit.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\PeriodoNomina\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\PeriodoNomina\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\PeriodoNomina\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\PeriodoNomina\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwCoAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Incidencias\\Create.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Incidencias\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Incidencias\\Create.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Incidencias\\Create.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAACBjwD4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Generar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Generar.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Generar.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Generar.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Generar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20241108173530_SalarioBase.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241108173530_SalarioBase.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Migrations\\20241108173530_SalarioBase.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241108173530_SalarioBase.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Migrations\\20241108173530_SalarioBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20241106041749_AddPeriodicidadToTrabajador.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106041749_AddPeriodicidadToTrabajador.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Migrations\\20241106041749_AddPeriodicidadToTrabajador.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106041749_AddPeriodicidadToTrabajador.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Migrations\\20241106041749_AddPeriodicidadToTrabajador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T01:21:39.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20241106024523_Init.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106024523_Init.cs",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Migrations\\20241106024523_Init.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PI 2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106024523_Init.cs",
+              "RelativeToolTip": "Sistema Nomina Web\\Migrations\\20241106024523_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T01:21:39.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20241106023030_Init.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Proyecto integrador 2B\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106023030_Init.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\PC\\Desktop\\Proyecto integrador 2B\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106023030_Init.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Proyecto integrador 2B\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106023030_Init.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\PC\\Desktop\\Proyecto integrador 2B\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Migrations\\20241106023030_Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T02:30:30.332Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
