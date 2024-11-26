@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\tipojornada\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\tipojornada\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\generar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\generar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\nomina\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\nomina\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|c:\\users\\arturo\\onedrive\\documentos\\proyecto 2bv2\\proyectonomina\\nomina1\\sistema nomina web\\sistema nomina web\\views\\tipojornada\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D65378E-A3A2-474E-8E7A-DBFD0556EE04}|Sistema Nomina Web\\Sistema Nomina Web.csproj|solutionrelative:sistema nomina web\\views\\tipojornada\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Edit.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T21:48:29.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T21:48:01.34Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -42,23 +76,25 @@
               "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Generar.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T21:03:55.116Z"
+              "WhenOpened": "2024-11-26T21:03:55.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
               "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
               "ToolTip": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
               "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Details.cshtml",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAswJoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T21:01:12.629Z"
+              "WhenOpened": "2024-11-26T21:01:12.629Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\Nomina\\Delete.cshtml",
               "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\Nomina\\Delete.cshtml",
@@ -66,17 +102,18 @@
               "RelativeToolTip": "Sistema Nomina Web\\Views\\Nomina\\Delete.cshtml",
               "ViewState": "AQIAAI4AAAAAAAAAAAAswKoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T20:57:41.154Z"
+              "WhenOpened": "2024-11-26T20:57:41.154Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
               "RelativeDocumentMoniker": "Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
               "ToolTip": "C:\\Users\\Arturo\\OneDrive\\Documentos\\Proyecto 2BV2\\ProyectoNomina\\Nomina1\\Sistema Nomina Web\\Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
               "RelativeToolTip": "Sistema Nomina Web\\Views\\TipoJornada\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T20:48:44.888Z",
               "EditorCaption": ""
