@@ -2,6 +2,122 @@
     ViewData["Title"] = "Contactanos";
 }
 
-<h1>Contactanos</h1>
+<style>
+    .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        font-family: system-ui, -apple-system, sans-serif;
+    }
 
-<p>Por favor envianos un mensaje</p>
+    .contact-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+        .contact-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-header p {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+
+    .contact-form {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+    .submit-btn {
+        background-color: #3498db;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+    .contact-info {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+        .contact-info p {
+            color: #7f8c8d;
+            margin: 0.5rem 0;
+        }
+</style>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos lo antes posible.</p>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar mensaje</button>
+        </form>
+
+        <div class="contact-info">
+            <p>📞 Teléfono: (123) 456-7890</p>
+            <p>📧 Email: contacto@tuempresa.com</p>
+            <p>📍 Dirección: Tu dirección empresarial</p>
+        </div>
+    </div>
