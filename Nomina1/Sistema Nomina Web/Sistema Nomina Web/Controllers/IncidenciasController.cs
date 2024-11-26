@@ -72,7 +72,7 @@ namespace Sistema_Nomina_Web.Controllers
             }
 
             ViewData["PeriodoNominaId"] = new SelectList(_context.PeriodoNominas, "PeriodoNominaId", "PeriodoNominaId", incidencium.PeriodoNominaId);
-            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "TrabajadorId", incidencium.TrabajadorId);
+            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "Nombre", incidencium.TrabajadorId);
             return View(incidencium);
         }
 
@@ -90,7 +90,7 @@ namespace Sistema_Nomina_Web.Controllers
                 return NotFound();
             }
             ViewData["PeriodoNominaId"] = new SelectList(_context.PeriodoNominas, "PeriodoNominaId", "PeriodoNominaId", incidencium.PeriodoNominaId);
-            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "TrabajadorId", incidencium.TrabajadorId);
+            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "Nombre", incidencium.TrabajadorId);
             return View(incidencium);
         }
 

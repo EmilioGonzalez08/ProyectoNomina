@@ -37,6 +37,7 @@ namespace Sistema_Nomina_Web.Controllers
                 .Include(n => n.Trabajador.TipoJornada)  // Incluir TipoJornada
                 .Include(n => n.Trabajador.TipoSalario)  // Incluir TipoSalario
                 .Include(n => n.PeriodoNomina)
+                .ThenInclude(n => n.Periodicidad)
                 .Include(n => n.Incidencia)
                 .FirstOrDefaultAsync(n => n.NominaId == id);
 
@@ -224,6 +225,7 @@ private void AddTableRow(Table table, string label, string value, bool isBold = 
         {
             var dB_NominaContext = _context.Nominas
                                            .Include(n => n.PeriodoNomina)
+                                           .ThenInclude(t => t.Periodicidad)
                                            .Include(n => n.Trabajador)
                                            .ThenInclude(t => t.Periodicidad)
                                            .Include(n => n.Incidencia); // Asegúrate de incluir incidencias
@@ -331,7 +333,7 @@ private void AddTableRow(Table table, string label, string value, bool isBold = 
             }
 
             ViewData["PeriodoNominaId"] = new SelectList(_context.PeriodoNominas, "PeriodoNominaId", "PeriodoNominaId", nomina.PeriodoNominaId);
-            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "TrabajadorId", nomina.TrabajadorId);
+            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "Nombre", nomina.TrabajadorId);
             return View(nomina);
         }
 
@@ -394,7 +396,7 @@ private void AddTableRow(Table table, string label, string value, bool isBold = 
                 return NotFound();
             }
             ViewData["PeriodoNominaId"] = new SelectList(_context.PeriodoNominas, "PeriodoNominaId", "PeriodoNominaId", nomina.PeriodoNominaId);
-            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "TrabajadorId", nomina.TrabajadorId);
+            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "Nombre", nomina.TrabajadorId);
             return View(nomina);
         }
 
@@ -431,7 +433,7 @@ private void AddTableRow(Table table, string label, string value, bool isBold = 
                 return RedirectToAction(nameof(Index));
             }
             ViewData["PeriodoNominaId"] = new SelectList(_context.PeriodoNominas, "PeriodoNominaId", "PeriodoNominaId", nomina.PeriodoNominaId);
-            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "TrabajadorId", nomina.TrabajadorId);
+            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "Nombre", nomina.TrabajadorId);
             return View(nomina);
         }
 

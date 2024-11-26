@@ -42,7 +42,7 @@
                 <th>@Html.DisplayNameFor(model => model.TotalDeducciones)</th>
                 <th>@Html.DisplayNameFor(model => model.SalarioNeto)</th>
                 <th>@Html.DisplayNameFor(model => model.FechaCalculo)</th>
-                <th>@Html.DisplayNameFor(model => model.PeriodoNomina.PeriodoNominaId)</th>
+                <th>@Html.DisplayNameFor(model => model.PeriodoNomina.Periodicidad)</th>
                 <th>@Html.DisplayNameFor(model => model.Trabajador.Nombre)</th>
                 <th>Acciones</th>
             </tr>
@@ -66,7 +66,7 @@
                     <td>@Html.DisplayFor(modelItem => item.TotalDeducciones)</td>
                     <td>@Html.DisplayFor(modelItem => item.SalarioNeto)</td>
                     <td>@Html.DisplayFor(modelItem => item.FechaCalculo)</td>
-                    <td>@Html.DisplayFor(modelItem => item.PeriodoNomina.PeriodoNominaId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PeriodoNomina.Periodicidad.Nombre)</td>
                     <td>@Html.DisplayFor(modelItem => item.Trabajador.Nombre)</td>
                     <td> <div class="action-buttons">
                         <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.NominaId">Editar</a>
