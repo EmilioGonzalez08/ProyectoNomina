@@ -1,3 +1,4 @@
+@model Sistema_Nomina_Web.Configuration.MailData
 ﻿@{
     ViewData["Title"] = "Contáctanos";
 }
@@ -120,10 +121,51 @@
             }
 </style>
 
+<<<<<<< HEAD
 <div class="contact-container">
     <div class="contact-header">
         <h1>Contáctanos</h1>
         <p>Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos lo antes posible.</p>
+=======
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos lo antes posible.</p>
+        </div>
+
+        <form asp-action="Contactanos">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+            <label asp-for="EmailToId" class="control-label">Correo electrónico</label>
+                <input asp-for="EmailToId" class="form-control" />
+                <span asp-validation-for="EmailToId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+            <label asp-for="EmailToName" class="control-label">Nombre completo</label>
+                <input asp-for="EmailToName" class="form-control" />
+                <span asp-validation-for="EmailToName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+            <label asp-for="EmailSubject" class="control-label">Asunto</label>
+                <input asp-for="EmailSubject" class="form-control" />
+                <span asp-validation-for="EmailSubject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+            <label asp-for="EmailBody" class="control-label">Mensaje</label>
+                <input asp-for="EmailBody" class="form-control" />
+                <span asp-validation-for="EmailBody" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-primary" />
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <p>📞 Teléfono: (123) 456-7890</p>
+            <p>📧 Email: contacto@tuempresa.com</p>
+            <p>📍 Dirección: Tu dirección empresarial</p>
+        </div>
+>>>>>>> b71a3cd5ec80a212e586c05b546d7e9d4f103540
     </div>
 
     <form class="contact-form">

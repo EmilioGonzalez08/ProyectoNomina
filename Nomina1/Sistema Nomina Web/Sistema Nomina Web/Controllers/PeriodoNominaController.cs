@@ -51,7 +51,7 @@ namespace Sistema_Nomina_Web.Controllers
         public IActionResult Create()
         {
             // Actualizado para cargar Periodicidad
-            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "Nombre");
+            ViewData["PeriodicidadId"] = new SelectList(_context.Periodicidades, "PeriodicidadId", "PeriodicidadId");
             return View();
         }
 
