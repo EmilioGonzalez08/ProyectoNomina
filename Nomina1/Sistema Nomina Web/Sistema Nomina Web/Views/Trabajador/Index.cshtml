@@ -18,6 +18,12 @@
 <p>
     <a class="btn btn-primary" asp-action="Create">Crear Nuevo Empleado</a>
 </p>
+<div class="btn-group" role="group">
+    <a class="btn btn-secondary" asp-controller="TipoJornada" asp-action="Index">Ver Tipos de Jornada</a>
+    <a class="btn btn-secondary" asp-controller="Incidencias" asp-action="Index">Ver Incidencias</a>
+    <a class="btn btn-secondary" asp-controller="TipoSalario" asp-action="Index">Ver Tipos de Salario</a>
+    <a class="btn btn-secondary" asp-controller="Periodicidad" asp-action="Index">Ver Periodicidades</a>
+</div>
 
 <div style="overflow-x:auto;">
     <table id="empleadosTable" class="display table table-striped table-bordered" style="width:100%">

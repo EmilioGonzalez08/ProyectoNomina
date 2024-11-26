@@ -51,7 +51,7 @@ namespace Sistema_Nomina_Web.Controllers
         public IActionResult Create()
         {
             ViewData["PeriodoNominaId"] = new SelectList(_context.PeriodoNominas, "PeriodoNominaId", "PeriodoNominaId");
-            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "TrabajadorId");
+            ViewData["TrabajadorId"] = new SelectList(_context.Trabajadors, "TrabajadorId", "Nombre");
             return View();
         }
 
