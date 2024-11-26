@@ -143,6 +143,55 @@
     <a class="btn btn-ver-periodos" asp-controller="PeriodoNomina" asp-action="Index">Ver Periodos de Nómina</a>
 </p>
 
+<p>
+    <button id="btnImprimirXml" class="btn btn-secondary">Imprimir XML</button>
+</p>
+<script>
+    document.getElementById("btnImprimirXml").addEventListener("click", function () {
+        // Obtener los datos de la tabla
+        const rows = document.querySelectorAll("#nominaTable tbody tr");
+        let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<Nominas>\n`;
+
+        rows.forEach(row => {
+            const cells = row.querySelectorAll("td");
+            xmlContent += `
+        <Nomina>
+            <SalarioBase>${cells[0].textContent.trim()}</SalarioBase>
+            <SalarioNominal>${cells[1].textContent.trim()}</SalarioNominal>
+            <HorasExtra>${cells[2].textContent.trim()}</HorasExtra>
+            <ImporteHorasExtra>${cells[3].textContent.trim()}</ImporteHorasExtra>
+            <Faltas>${cells[4].textContent.trim()}</Faltas>
+            <DescuentoFaltas>${cells[5].textContent.trim()}</DescuentoFaltas>
+            <Isr>${cells[6].textContent.trim()}</Isr>
+            <Imss>${cells[7].textContent.trim()}</Imss>
+            <OtrasDeducciones>${cells[8].textContent.trim()}</OtrasDeducciones>
+            <TotalPercepciones>${cells[9].textContent.trim()}</TotalPercepciones>
+            <TotalDeducciones>${cells[10].textContent.trim()}</TotalDeducciones>
+            <SalarioNeto>${cells[11].textContent.trim()}</SalarioNeto>
+            <FechaCalculo>${cells[12].textContent.trim()}</FechaCalculo>
+            <Periodicidad>${cells[13].textContent.trim()}</Periodicidad>
+            <Trabajador>${cells[14].textContent.trim()}</Trabajador>
+        </Nomina>`;
+        });
+
+        xmlContent += `\n</Nominas>`;
+
+        // Crear un blob para descargar el XML
+        const blob = new Blob([xmlContent], { type: "application/xml" });
+        const url = URL.createObjectURL(blob);
+
+        // Crear un enlace para descargar el archivo
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "nominas.xml";
+        a.click();
+
+        // Liberar el objeto URL
+        URL.revokeObjectURL(url);
+    });
+</script>
+
+
 <div style="overflow-x:auto;">
     <table id="nominaTable" class="display table table-striped table-bordered" style="width:100%">
         <thead>
