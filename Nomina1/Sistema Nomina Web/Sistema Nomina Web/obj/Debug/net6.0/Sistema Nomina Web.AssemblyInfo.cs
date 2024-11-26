@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema Nomina Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5705f99f0e13cf66e2d5b8c9b6f26dbdae207f0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema Nomina Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema Nomina Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
