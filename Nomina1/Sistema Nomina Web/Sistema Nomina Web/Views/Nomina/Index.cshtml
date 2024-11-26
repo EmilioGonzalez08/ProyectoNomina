@@ -13,6 +13,126 @@
 <!-- DataTables JS -->
 <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
 
+<style>
+    /* Fondo con degradado azul cálido */
+    body {
+        background: linear-gradient(to bottom, #A3D5FF, #E3F2FD);
+        color: #000000; /* Letras en negro */
+        font-family: system-ui, -apple-system, sans-serif;
+        text-align: center; /* Centrado de los textos */
+    }
+
+    h1 {
+        color: #000000; /* Títulos en negro */
+    }
+
+    .btn {
+        border-radius: 50px; /* Botones redondeados */
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary {
+        background-color: #1E90FF; /* Azul cálido */
+        color: #ffffff;
+    }
+
+        .btn-primary:hover {
+            background-color: #005BB5; /* Azul más oscuro al pasar el mouse */
+        }
+
+    .btn-secondary {
+        background-color: #A3D5FF; /* Azul cálido claro */
+        color: #000000;
+    }
+
+        .btn-secondary:hover {
+            background-color: #7FB6D5; /* Azul más oscuro al pasar el mouse */
+        }
+
+    .btn-warning {
+        background-color: #FFCC00; /* Amarillo cálido */
+        color: #000000;
+    }
+
+        .btn-warning:hover {
+            background-color: #FFB300; /* Amarillo más oscuro */
+        }
+
+    .btn-info {
+        background-color: #00B5FF; /* Azul frío */
+        color: #ffffff;
+    }
+
+        .btn-info:hover {
+            background-color: #008BCC; /* Azul más oscuro */
+        }
+
+    .btn-danger {
+        background-color: #FF5733; /* Naranja cálido */
+        color: #ffffff;
+    }
+
+        .btn-danger:hover {
+            background-color: #FF2A00; /* Naranja más oscuro */
+        }
+
+    .btn-outline-primary {
+        background-color: transparent;
+        color: #1E90FF;
+        border: 2px solid #1E90FF;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #1E90FF;
+            color: white;
+        }
+
+    /* Botón de "Ver Periodos de Nómina" con color verde cálido */
+    .btn-ver-periodos {
+        background-color: #66BB6A; /* Verde cálido */
+        color: #ffffff;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        border-radius: 50px; /* Botón redondeado */
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-ver-periodos:hover {
+            background-color: #388E3C; /* Verde más oscuro al pasar el mouse */
+        }
+
+    /* Estilo para la tabla */
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: #81C7FF; /* Azul más fuerte para la tabla */
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4682B4; /* Azul más fuerte para los encabezados */
+        color: #ffffff; /* Texto en blanco para los encabezados */
+    }
+
+    td {
+        background-color: #E3F2FD; /* Azul claro */
+        color: #000000; /* Texto en negro */
+    }
+
+    .action-buttons a {
+        margin: 0 5px; /* Espaciado entre los botones de acción */
+    }
+</style>
+
 <h1>Nómina</h1>
 
 <p>
@@ -20,7 +140,7 @@
 </p>
 
 <p>
-    <a class="btn btn-secondary" asp-controller="PeriodoNomina" asp-action="Index">Ver Periodos de Nómina</a>
+    <a class="btn btn-ver-periodos" asp-controller="PeriodoNomina" asp-action="Index">Ver Periodos de Nómina</a>
 </p>
 
 <div style="overflow-x:auto;">
@@ -28,9 +148,7 @@
         <thead>
             <tr>
                 <th>@Html.DisplayNameFor(model => model.SalarioBase)</th>
-                <th>
-                    Salario Nominal
-                </th>
+                <th>Salario Nominal</th>
                 <th>@Html.DisplayNameFor(model => model.HorasExtra)</th>
                 <th>@Html.DisplayNameFor(model => model.ImporteHorasExtra)</th>
                 <th>@Html.DisplayNameFor(model => model.Faltas)</th>
@@ -52,9 +170,7 @@
             {
                 <tr>
                     <td>@Html.DisplayFor(modelItem => item.SalarioBase)</td>
-                    <td>
-                        @item.SalarioSegunPeriodicidad.ToString("C")
-                    </td>
+                    <td>@item.SalarioSegunPeriodicidad.ToString("C")</td>
                     <td>@Html.DisplayFor(modelItem => item.HorasExtra)</td>
                     <td>@Html.DisplayFor(modelItem => item.ImporteHorasExtra)</td>
                     <td>@Html.DisplayFor(modelItem => item.Faltas)</td>
@@ -68,13 +184,13 @@
                     <td>@Html.DisplayFor(modelItem => item.FechaCalculo)</td>
                     <td>@Html.DisplayFor(modelItem => item.PeriodoNomina.PeriodoNominaId)</td>
                     <td>@Html.DisplayFor(modelItem => item.Trabajador.Nombre)</td>
-                    <td> <div class="action-buttons">
-                        <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.NominaId">Editar</a>
-                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.NominaId">Detalles</a>
-                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.NominaId">Eliminar</a>
-                        <a class="btn btn-outline-primary" asp-action="GenerarPDF" asp-route-id="@item.NominaId" >PDF</a>
+                    <td>
+                        <div class="action-buttons">
+                            <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.NominaId">Editar</a>
+                            <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.NominaId">Detalles</a>
+                            <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.NominaId">Eliminar</a>
+                            <a class="btn btn-outline-primary" asp-action="GenerarPDF" asp-route-id="@item.NominaId">PDF</a>
                         </div>
-
                     </td>
                 </tr>
             }

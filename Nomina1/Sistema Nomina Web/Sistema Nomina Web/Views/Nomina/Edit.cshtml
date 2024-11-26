@@ -4,96 +4,163 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 style="text-align: center;">Editar</h1>
 
-<h4>Nomina</h4>
+<h4 style="text-align: center;">Nomina</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row" style="justify-content: center;">
+    <div class="col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="NominaId" />
             <div class="form-group">
                 <label asp-for="TrabajadorId" class="control-label"></label>
-                <select asp-for="TrabajadorId" class="form-control" asp-items="ViewBag.TrabajadorId"></select>
+                <select asp-for="TrabajadorId" class="form-control custom-input"></select>
                 <span asp-validation-for="TrabajadorId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PeriodoNominaId" class="control-label"></label>
-                <select asp-for="PeriodoNominaId" class="form-control" asp-items="ViewBag.PeriodoNominaId"></select>
+                <select asp-for="PeriodoNominaId" class="form-control custom-input"></select>
                 <span asp-validation-for="PeriodoNominaId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SalarioBase" class="control-label"></label>
-                <input asp-for="SalarioBase" class="form-control" />
+                <input asp-for="SalarioBase" class="form-control custom-input" />
                 <span asp-validation-for="SalarioBase" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="HorasExtra" class="control-label"></label>
-                <input asp-for="HorasExtra" class="form-control" />
+                <input asp-for="HorasExtra" class="form-control custom-input" />
                 <span asp-validation-for="HorasExtra" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ImporteHorasExtra" class="control-label"></label>
-                <input asp-for="ImporteHorasExtra" class="form-control" />
+                <input asp-for="ImporteHorasExtra" class="form-control custom-input" />
                 <span asp-validation-for="ImporteHorasExtra" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Faltas" class="control-label"></label>
-                <input asp-for="Faltas" class="form-control" />
+                <input asp-for="Faltas" class="form-control custom-input" />
                 <span asp-validation-for="Faltas" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DescuentoFaltas" class="control-label"></label>
-                <input asp-for="DescuentoFaltas" class="form-control" />
+                <input asp-for="DescuentoFaltas" class="form-control custom-input" />
                 <span asp-validation-for="DescuentoFaltas" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Isr" class="control-label"></label>
-                <input asp-for="Isr" class="form-control" />
+                <input asp-for="Isr" class="form-control custom-input" />
                 <span asp-validation-for="Isr" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Imss" class="control-label"></label>
-                <input asp-for="Imss" class="form-control" />
+                <input asp-for="Imss" class="form-control custom-input" />
                 <span asp-validation-for="Imss" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="OtrasDeducciones" class="control-label"></label>
-                <input asp-for="OtrasDeducciones" class="form-control" />
+                <input asp-for="OtrasDeducciones" class="form-control custom-input" />
                 <span asp-validation-for="OtrasDeducciones" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TotalPercepciones" class="control-label"></label>
-                <input asp-for="TotalPercepciones" class="form-control" />
+                <input asp-for="TotalPercepciones" class="form-control custom-input" />
                 <span asp-validation-for="TotalPercepciones" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TotalDeducciones" class="control-label"></label>
-                <input asp-for="TotalDeducciones" class="form-control" />
+                <input asp-for="TotalDeducciones" class="form-control custom-input" />
                 <span asp-validation-for="TotalDeducciones" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SalarioNeto" class="control-label"></label>
-                <input asp-for="SalarioNeto" class="form-control" />
+                <input asp-for="SalarioNeto" class="form-control custom-input" />
                 <span asp-validation-for="SalarioNeto" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaCalculo" class="control-label"></label>
-                <input asp-for="FechaCalculo" class="form-control" />
+                <input asp-for="FechaCalculo" class="form-control custom-input" />
                 <span asp-validation-for="FechaCalculo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group" style="text-align: center;">
+                <input type="submit" value="Save" class="btn btn-success custom-btn" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div style="text-align: center;">
+    <a asp-action="Index" class="btn btn-primary custom-btn">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #A3D5FF, #E3F2FD);
+        color: black; /* Texto en negro */
+        font-family: system-ui, sans-serif;
+    }
+
+    h1, h4 {
+        text-align: center;
+        color: black;
+    }
+
+    .form-group label {
+        color: black;
+    }
+
+    /* Botones redondeados con colores cálidos azul y verde */
+    .btn {
+        border-radius: 50px;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary {
+        background-color: #A3D5FF; /* Azul cálido */
+        color: #000;
+    }
+
+        .btn-primary:hover {
+            background-color: #7FB6D5; /* Azul más oscuro al pasar el mouse */
+        }
+
+    .btn-success {
+        background-color: #66BB6A; /* Verde cálido */
+        color: white;
+    }
+
+        .btn-success:hover {
+            background-color: #388E3C; /* Verde más oscuro al pasar el mouse */
+        }
+
+    .form-control {
+        border-radius: 50px;
+        padding: 0.8rem;
+    }
+
+    .custom-input {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #ddd;
+    }
+
+    .custom-btn {
+        border-radius: 50px;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+</style>

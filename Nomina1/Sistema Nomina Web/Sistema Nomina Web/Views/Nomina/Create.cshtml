@@ -4,6 +4,119 @@
     ViewData["Title"] = "Create";
 }
 
+<style>
+    /* Fondo con degradado azul cálido */
+    body {
+        background: linear-gradient(to bottom, #A3D5FF, #E3F2FD);
+        color: #000000; /* Letras en negro */
+        font-family: system-ui, -apple-system, sans-serif;
+        text-align: center; /* Centrado de los textos */
+    }
+
+    h1, h4 {
+        color: #000000; /* Títulos en negro */
+    }
+
+    .form-group label {
+        color: #000000; /* Etiquetas en negro */
+        font-weight: bold;
+    }
+
+    .form-group select, .form-group input[type="submit"] {
+        border-radius: 15px; /* Campos y botones redondeados */
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .form-group input[type="submit"] {
+        background-color: #1E90FF; /* Azul cálido */
+        color: #ffffff; /* Texto blanco */
+        border: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #005BB5; /* Azul más oscuro al pasar el mouse */
+        }
+
+    .btn-crear {
+        background-color: #28a745; /* Verde cálido para el botón de creación */
+        color: #ffffff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px; /* Botón redondo */
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+        .btn-crear:hover {
+            background-color: #218838; /* Verde más oscuro */
+        }
+
+    a {
+        color: #1E90FF; /* Links en azul cálido */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        a:hover {
+            text-decoration: underline;
+            color: #005BB5; /* Azul más oscuro al pasar el mouse */
+        }
+
+    /* Estilo para la tabla */
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #A3D5FF; /* Azul cálido */
+        color: #000000; /* Texto en negro */
+    }
+
+    td {
+        background-color: #E3F2FD; /* Azul claro */
+        color: #000000; /* Texto en negro */
+    }
+
+    /* Estilo para los botones de la tabla */
+    .btn-table {
+        border-radius: 50px; /* Botones redondos */
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-blue {
+        background-color: #1E90FF; /* Azul cálido */
+    }
+
+        .btn-blue:hover {
+            background-color: #005BB5; /* Azul más oscuro */
+        }
+
+    .btn-green {
+        background-color: #28a745; /* Verde cálido */
+    }
+
+        .btn-green:hover {
+            background-color: #218838; /* Verde más oscuro */
+        }
+</style>
+
 <h1>Create</h1>
 
 <h4>Nomina</h4>
@@ -14,11 +127,11 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="TrabajadorId" class="control-label"></label>
-                <select asp-for="TrabajadorId" class ="form-control" asp-items="ViewBag.TrabajadorId"></select>
+                <select asp-for="TrabajadorId" class="form-control" asp-items="ViewBag.TrabajadorId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="PeriodoNominaId" class="control-label"></label>
-                <select asp-for="PeriodoNominaId" class ="form-control" asp-items="ViewBag.PeriodoNominaId"></select>
+                <select asp-for="PeriodoNominaId" class="form-control" asp-items="ViewBag.PeriodoNominaId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -28,9 +141,42 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn-table btn-blue">Back to List</a>
+</div>
+
+<!-- Ejemplo de una tabla -->
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Trabajador</th>
+                <th>Periodo de Nómina</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td>
+                <td>2024/11</td>
+                <td>
+                    <a href="#" class="btn-table btn-blue">Ver</a>
+                    <a href="#" class="btn-table btn-green">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Ana Gómez</td>
+                <td>2024/11</td>
+                <td>
+                    <a href="#" class="btn-table btn-blue">Ver</a>
+                    <a href="#" class="btn-table btn-green">Editar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

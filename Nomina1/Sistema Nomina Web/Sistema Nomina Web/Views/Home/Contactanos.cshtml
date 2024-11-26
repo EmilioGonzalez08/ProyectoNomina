@@ -3,11 +3,17 @@
 }
 
 <style>
+    /* Fondo con degradado azul cálido */
+    body {
+        background: linear-gradient(to bottom, #A3D5FF, #E3F2FD);
+        color: #000000; /* Letras en negro */
+        font-family: system-ui, -apple-system, sans-serif;
+    }
+
     .contact-container {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 2rem auto;
         padding: 2rem;
-        font-family: system-ui, -apple-system, sans-serif;
     }
 
     .contact-header {
@@ -16,21 +22,22 @@
     }
 
         .contact-header h1 {
-            color: #2c3e50;
+            color: #000000; /* Letras en negro */
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
 
         .contact-header p {
-            color: #7f8c8d;
+            color: #000000; /* Letras en negro */
             font-size: 1.2rem;
         }
 
     .contact-form {
-        background-color: #f8f9fa;
+        background: linear-gradient(to bottom, #A3D5FF, #1E90FF); /* Degradado azul cálido */
         padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        color: #000000; /* Texto en negro */
     }
 
     .form-group {
@@ -40,8 +47,8 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #2c3e50;
-            font-weight: 500;
+            color: #000000; /* Letras en negro */
+            font-weight: bold;
         }
 
         .form-group input,
@@ -49,8 +56,10 @@
             width: 100%;
             padding: 0.8rem;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             font-size: 1rem;
+            background: #ffffff; /* Fondo blanco */
+            color: #000000; /* Texto en negro */
         }
 
         .form-group textarea {
@@ -59,19 +68,20 @@
         }
 
     .submit-btn {
-        background-color: #3498db;
-        color: white;
+        background-color: #ffffff; /* Fondo blanco */
+        color: #1E90FF; /* Texto azul */
         padding: 1rem 2rem;
         border: none;
-        border-radius: 5px;
+        border-radius: 50px; /* Botón redondo */
         font-size: 1.1rem;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s ease;
         width: 100%;
     }
 
         .submit-btn:hover {
-            background-color: #2980b9;
+            background-color: #005BB5; /* Azul más oscuro */
+            color: #ffffff; /* Texto blanco */
         }
 
     .contact-info {
@@ -80,49 +90,74 @@
     }
 
         .contact-info p {
-            color: #7f8c8d;
+            color: #000000; /* Letras en negro */
             margin: 0.5rem 0;
         }
+
+    .additional-section {
+        margin-top: 4rem;
+    }
+
+        .additional-section h1,
+        .additional-section h3,
+        .additional-section p {
+            color: #000000; /* Letras en negro */
+        }
+
+        .additional-section .btn {
+            background-color: #1E90FF; /* Azul cálido */
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px; /* Botón redondo */
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .additional-section .btn:hover {
+                background-color: #005BB5;
+            }
 </style>
 
-    <div class="contact-container">
-        <div class="contact-header">
-            <h1>Contáctanos</h1>
-            <p>Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos lo antes posible.</p>
-        </div>
-
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Enviar mensaje</button>
-        </form>
-
-        <div class="contact-info">
-            <p>📞 Teléfono: (123) 456-7890</p>
-            <p>📧 Email: contacto@tuempresa.com</p>
-            <p>📍 Dirección: Tu dirección empresarial</p>
-        </div>
+<div class="contact-container">
+    <div class="contact-header">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos lo antes posible.</p>
     </div>
 
-<div class="container py-5">
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar mensaje</button>
+    </form>
+
+    <div class="contact-info">
+        <p>📞 Teléfono: (123) 456-7890</p>
+        <p>📧 Email: contacto@tuempresa.com</p>
+        <p>📍 Dirección: Tu dirección empresarial</p>
+    </div>
+</div>
+
+<div class="container py-5 additional-section">
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
             <div class="card shadow">
@@ -135,16 +170,19 @@
                         Si necesitas asistencia o tienes alguna duda, puedes llamarnos al siguiente número telefónico:
                     </p>
                     <p class="h5 text-primary">
-                        <strong>+52 55 1234 5678</strong>  <!-- Número telefónico ficticio con lada mexicana -->
+                        <strong>+52 55 1234 5678</strong>
                     </p>
                     <hr />
                     <p>
                         También puedes consultar más información sobre el visor de comprobantes de nómina para el trabajador en el portal oficial del SAT:
                     </p>
-                    <a href="https://www.sat.gob.mx/declaracion/97720/consulta-el-visor-de-comprobantes-de-nomina-para-el-trabajador" target="_blank" class="btn btn-primary mt-4">Ir al visor de comprobantes de nómina</a>
+                    <a href="https://www.sat.gob.mx/declaracion/97720/consulta-el-visor-de-comprobantes-de-nomina-para-el-trabajador"
+                       target="_blank"
+                       class="btn btn-primary mt-4">
+                        Ir al visor de comprobantes de nómina
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-

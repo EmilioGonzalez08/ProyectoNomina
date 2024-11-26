@@ -2,6 +2,47 @@
     ViewData["Title"] = "Página de Inicio";
 }
 
+<style>
+    /* Fondo con degradado azul cálido */
+    body {
+        background: linear-gradient(to bottom, #A3D5FF, #E3F2FD);
+        color: #000000; /* Color negro para el texto */
+    }
+
+    .card {
+        border-radius: 15px;
+        background: #ffffff; /* Fondo blanco de las tarjetas */
+    }
+
+    .btn-custom {
+        background-color: #1E90FF; /* Azul cálido para los botones */
+        color: #ffffff; /* Texto blanco en los botones */
+        border: none;
+        border-radius: 50px; /* Botones redondos */
+        padding: 10px 20px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-decoration: none; /* Quitar subrayado en botones que son enlaces */
+    }
+
+        .btn-custom:hover {
+            background-color: #005BB5; /* Color más oscuro al pasar el mouse */
+        }
+
+    a {
+        color: #1E90FF; /* Color azul cálido para enlaces */
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    h1, h3 {
+        color: #000000; /* Letras en negro */
+    }
+</style>
+
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
@@ -10,7 +51,7 @@
                     <h1 class="display-4 mb-4">Bienvenido</h1>
                     <p class="lead mb-4">
                         Aprende sobre el desarrollo de aplicaciones web con
-                        <a href="https://docs.microsoft.com/aspnet/core" class="text-decoration-none" target="_blank">ASP.NET Core</a>.
+                        <a href="https://docs.microsoft.com/aspnet/core" target="_blank">ASP.NET Core</a>.
                     </p>
                     <hr />
                     <h3 class="mb-3">¿Qué es un sistema de nóminas en México?</h3>
@@ -20,6 +61,10 @@
                         deducciones fiscales, aportaciones al IMSS, INFONAVIT y otras obligaciones legales.
                         Es clave para cumplir con la normativa laboral y garantizar transparencia en los procesos.
                     </p>
+                    <!-- Botón redireccionando a la página especificada -->
+                    <a href="https://www.buk.mx/blog/todo-lo-que-debes-saber-sobre-nomina" class="btn btn-custom mt-4" target="_blank">
+                        Mas informacion de la Nomina en México
+                    </a>
                 </div>
             </div>
         </div>

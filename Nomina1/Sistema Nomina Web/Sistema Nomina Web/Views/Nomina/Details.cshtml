@@ -4,99 +4,164 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 style="text-align: center; color: black;">Details</h1>
 
 <div>
-    <h4>Nomina</h4>
+    <h4 style="text-align: center; color: black;">Nomina</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
+    <dl class="row" style="font-size: 1.1rem;">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.SalarioBase)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.SalarioBase)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.HorasExtra)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.HorasExtra)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.ImporteHorasExtra)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.ImporteHorasExtra)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Faltas)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Faltas)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.DescuentoFaltas)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DescuentoFaltas)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Isr)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Isr)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Imss)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Imss)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.OtrasDeducciones)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.OtrasDeducciones)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TotalPercepciones)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.TotalPercepciones)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TotalDeducciones)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.TotalDeducciones)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.SalarioNeto)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.SalarioNeto)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FechaCalculo)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FechaCalculo)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PeriodoNomina)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PeriodoNomina.PeriodoNominaId)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Trabajador)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Trabajador.Nombre)
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.NominaId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+<div style="text-align: center;">
+    <a asp-action="Edit" asp-route-id="@Model?.NominaId" class="btn btn-info custom-btn">Edit</a> |
+    <a asp-action="Index" class="btn btn-primary custom-btn">Back to List</a>
 </div>
+
+@section Styles {
+    <style>
+        body {
+            background: linear-gradient(to bottom, #A3D5FF, #E3F2FD); /* Fondo azul claro degradado */
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        h1, h4 {
+            color: black;
+        }
+
+        .btn {
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .btn-info {
+            background-color: #66BBFF; /* Azul claro */
+            color: white;
+        }
+
+            .btn-info:hover {
+                background-color: #3399FF; /* Azul más oscuro */
+            }
+
+        .btn-primary {
+            background-color: #A3D5FF; /* Azul cálido */
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background-color: #7FB6D5; /* Azul más oscuro */
+            }
+
+        .table {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+            .table th, .table td {
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #ddd;
+            }
+
+            .table th {
+                background-color: #E3F2FD;
+            }
+
+        .custom-btn {
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 5px;
+        }
+    </style>
+}
