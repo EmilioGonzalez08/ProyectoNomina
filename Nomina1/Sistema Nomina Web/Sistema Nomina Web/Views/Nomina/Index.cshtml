@@ -15,6 +15,7 @@
 
 <style>
     /* Fondo con degradado azul cálido */
+    /* General - Fondo y texto */
     body {
         background: linear-gradient(to bottom, #A3D5FF, #E3F2FD);
         color: #000000; /* Letras en negro */
@@ -26,10 +27,11 @@
         color: #000000; /* Títulos en negro */
     }
 
+    /* Botones */
     .btn {
-        border-radius: 50px; /* Botones redondeados */
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
+        border-radius: 25px; /* Botones más redondeados */
+        padding: 0.4rem 1rem; /* Tamaño reducido */
+        font-size: 0.875rem; /* Texto más pequeño */
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -49,7 +51,7 @@
     }
 
         .btn-secondary:hover {
-            background-color: #7FB6D5; /* Azul más oscuro al pasar el mouse */
+            background-color: #7FB6D5; /* Azul más oscuro */
         }
 
     .btn-warning {
@@ -90,47 +92,50 @@
             color: white;
         }
 
-    /* Botón de "Ver Periodos de Nómina" con color verde cálido */
+    /* Botón de "Ver Periodos de Nómina" */
     .btn-ver-periodos {
         background-color: #66BB6A; /* Verde cálido */
         color: #ffffff;
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
-        border-radius: 50px; /* Botón redondeado */
+        padding: 0.4rem 1rem; /* Tamaño reducido */
+        font-size: 0.875rem; /* Texto más pequeño */
+        border-radius: 25px; /* Redondeado */
         transition: background-color 0.3s ease;
     }
 
         .btn-ver-periodos:hover {
-            background-color: #388E3C; /* Verde más oscuro al pasar el mouse */
+            background-color: #388E3C; /* Verde más oscuro */
         }
 
-    /* Estilo para la tabla */
+    /* Tabla */
     table {
         width: 100%;
         margin-top: 20px;
         border-collapse: collapse;
-        background-color: #81C7FF; /* Azul más fuerte para la tabla */
+        background-color: #81C7FF; /* Azul más fuerte */
     }
 
     th, td {
-        padding: 12px;
+        padding: 8px; /* Ajuste del espacio en las celdas */
         text-align: center;
         border: 1px solid #ddd;
     }
 
     th {
-        background-color: #4682B4; /* Azul más fuerte para los encabezados */
-        color: #ffffff; /* Texto en blanco para los encabezados */
+        background-color: #4682B4; /* Azul fuerte */
+        color: #ffffff; /* Texto blanco */
     }
 
     td {
         background-color: #E3F2FD; /* Azul claro */
-        color: #000000; /* Texto en negro */
+        color: #000000; /* Texto negro */
     }
 
+    /* Espaciado entre botones */
     .action-buttons a {
-        margin: 0 5px; /* Espaciado entre los botones de acción */
+        margin: 2px; /* Espaciado más uniforme */
+        display: inline-block; /* Asegura que cada botón sea tratado como elemento independiente */
     }
+
 </style>
 
 <h1>Nómina</h1>
@@ -209,7 +214,7 @@
                 <th>@Html.DisplayNameFor(model => model.TotalDeducciones)</th>
                 <th>@Html.DisplayNameFor(model => model.SalarioNeto)</th>
                 <th>@Html.DisplayNameFor(model => model.FechaCalculo)</th>
-                <th>@Html.DisplayNameFor(model => model.PeriodoNomina.Periodicidad)</th>
+                <th>@Html.DisplayNameFor(model => model.Trabajador.Periodicidad)</th>
                 <th>@Html.DisplayNameFor(model => model.Trabajador.Nombre)</th>
                 <th>Acciones</th>
             </tr>
@@ -231,7 +236,7 @@
                     <td>@Html.DisplayFor(modelItem => item.TotalDeducciones)</td>
                     <td>@Html.DisplayFor(modelItem => item.SalarioNeto)</td>
                     <td>@Html.DisplayFor(modelItem => item.FechaCalculo)</td>
-                    <td>@Html.DisplayFor(modelItem => item.PeriodoNomina.Periodicidad.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Trabajador.Periodicidad.Nombre)</td>
                     <td>@Html.DisplayFor(modelItem => item.Trabajador.Nombre)</td>
                     <td>
                         <div class="action-buttons">
@@ -239,6 +244,7 @@
                             <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.NominaId">Detalles</a>
                             <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.NominaId">Eliminar</a>
                             <a class="btn btn-outline-primary" asp-action="GenerarPDF" asp-route-id="@item.NominaId">PDF</a>
+                            <button class="btn btn-secondary btn-sm btnGenerarXML">Generar XML</button>
                         </div>
                     </td>
                 </tr>
@@ -264,3 +270,47 @@
         });
     });
 </script>
+<script>
+    // Manejar la generación de XML para cada nómina individual
+    document.addEventListener("DOMContentLoaded", function () {
+        const botonesXml = document.querySelectorAll(".btnGenerarXML");
+        botonesXml.forEach(btn => {
+            btn.addEventListener("click", function () {
+                // Obtener la fila asociada al botón
+                const fila = btn.closest("tr");
+                const celdas = fila.querySelectorAll("td");
+                const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>\n<Nomina>\n` +
+                    `    <SalarioBase>${celdas[0].textContent.trim()}</SalarioBase>\n` +
+                    `    <SalarioNominal>${celdas[1].textContent.trim()}</SalarioNominal>\n` +
+                    `    <HorasExtra>${celdas[2].textContent.trim()}</HorasExtra>\n` +
+                    `    <ImporteHorasExtra>${celdas[3].textContent.trim()}</ImporteHorasExtra>\n` +
+                    `    <Faltas>${celdas[4].textContent.trim()}</Faltas>\n` +
+                    `    <DescuentoFaltas>${celdas[5].textContent.trim()}</DescuentoFaltas>\n` +
+                    `    <Isr>${celdas[6].textContent.trim()}</Isr>\n` +
+                    `    <Imss>${celdas[7].textContent.trim()}</Imss>\n` +
+                    `    <OtrasDeducciones>${celdas[8].textContent.trim()}</OtrasDeducciones>\n` +
+                    `    <TotalPercepciones>${celdas[9].textContent.trim()}</TotalPercepciones>\n` +
+                    `    <TotalDeducciones>${celdas[10].textContent.trim()}</TotalDeducciones>\n` +
+                    `    <SalarioNeto>${celdas[11].textContent.trim()}</SalarioNeto>\n` +
+                    `    <FechaCalculo>${celdas[12].textContent.trim()}</FechaCalculo>\n` +
+                    `    <Periodicidad>${celdas[13].textContent.trim()}</Periodicidad>\n` +
+                    `    <Trabajador>${celdas[14].textContent.trim()}</Trabajador>\n` +
+                    `</Nomina>`;
+
+                // Crear un blob para descargar el XML
+                const blob = new Blob([xmlContent], { type: "application/xml" });
+                const url = URL.createObjectURL(blob);
+
+                // Crear un enlace para descargar el archivo
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `nomina_${celdas[14].textContent.trim()}.xml`; // Incluye el nombre del trabajador en el archivo
+                a.click();
+
+                // Liberar el objeto URL
+                URL.revokeObjectURL(url);
+            });
+        });
+    });
+</script>
+
